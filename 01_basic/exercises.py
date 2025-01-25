@@ -3,6 +3,8 @@
 # Ejercicios para practicar los conceptos aprendidos en las lecciones.
 ###
 
+import os
+
 print("\nEjercicio 1: Imprimir mensajes")
 print("Escribe un programa que imprima tu nombre y tu ciudad en líneas separadas.")
 
@@ -45,3 +47,21 @@ print("1. Crea una variable con el número PI (sin asignar una variable)")
 print("2. Redondea el número con round()")
 print("3. Haz la división entera entre el número que te salió y el número 2")
 print("4. El resultado debería ser 1")
+
+
+#---------------------------- RESPUESTAS -------------------------
+
+def clear_console():
+	print('\n'*100)
+
+
+clear_console()
+print('Fabian Ortiz\nCumana')
+
+
+print(type(a))
+print(type(b))
+print(type(c))
+print(type(e))
+
+
