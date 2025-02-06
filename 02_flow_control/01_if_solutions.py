@@ -21,7 +21,6 @@ else:
 # Realiza la operación y muestra el resultado (maneja la división entre zero)
 print("\nEjercicio 2:")
 num1 = float(input("Introduce el primer número: "))
-num2 = float(input("Introduce el segundo número: "))
 operacion = input("Introduce la operación (+, -, *, /): ")
 
 if operacion == "+":
@@ -74,3 +73,13 @@ elif edad >= 65:
     print("Adulto mayor")
 else:
     print("Edad no válida.")
+
+ print('hola')
+
+ hola = 20
+
+
+
+
+
+ perro = 'gato'

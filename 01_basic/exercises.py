@@ -54,14 +54,40 @@ print("4. El resultado debería ser 1")
 def clear_console():
 	print('\n'*100)
 
-
+#ejercicio 1
 clear_console()
 print('Fabian Ortiz\nCumana')
 
-
+#ejercicio 2
 print(type(a))
 print(type(b))
 print(type(c))
 print(type(e))
 
+#ejercicio 3
+number = '1234'
 
+to_int_number = int(number)
+print(f'{number} este numero es de tipo {type(number)}')
+
+to_float_number = float(number)
+print(f'{number} este numero es de tipo {type(number)}')
+
+#ejercicio 4
+name = 'fabian'
+age = 22
+height = 1.68
+
+def greetings():
+	return f'hola! me llamo {name} y tengo {age} anios, mido {height} metros'
+
+saludo = greetings()
+print(saludo)
+
+
+
+#ejercicio 5
+pi = 3.141516
+rounded_pi = round(pi)
+final = rounded_pi/2
+print(int(final))

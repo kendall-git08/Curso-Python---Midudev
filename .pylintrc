@@ -1,0 +1,8 @@
+[MASTER]
+# Otras configuraciones generales pueden ir aquí
+
+[MESSAGES CONTROL]
+disable=C0103
+
+# Analizar bloques de importación de reserva.
+analyse-fallback-blocks=no
