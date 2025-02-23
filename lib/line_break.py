@@ -1,2 +1,2 @@
-export def line_break():
-	print('\n'*100)
+def line_break():
+    print("\n" * 100)

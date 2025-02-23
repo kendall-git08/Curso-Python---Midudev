@@ -15,25 +15,15 @@ Crea una función en Python que reciba una cadena de texto. Esta función debe c
 - En el caso de que no aparezca ninguna de las dos letras en la cadena, se entiende que el equilibrio se mantiene (0 = 0), por lo que la función debe retornar True.
 """
 
-text = "RRRRJJJjjjrrr"
 
-def check_is_balanced(text):
-  text = text.upper()
+def balance_detector(text: str):
+    text = text.lower()
+    r_count = text.count("r")
+    j_count = text.count("j")
 
-  # contar facilmente el número de veces que aparece una letra
-  count_r = text.count("R") # Reed Richards
-  count_j = text.count("J") # Johnny Storm
+    return r_count == j_count
 
-  print(f"count_r: {count_r} count_j: {count_j}")
 
-  # if count_r == count_j:
-  #   return True
-  # else:
-  #   return False
-
-  return count_r == count_j
-
-print(check_is_balanced("RRJJ"))
-print(check_is_balanced("RRRRJJ"))
-print(check_is_balanced("RRJJJJJJ"))
-print(check_is_balanced("awwwaqAQAQA"))
+balance = balance_detector("jrrrr")
+print(balance)
+print(0)

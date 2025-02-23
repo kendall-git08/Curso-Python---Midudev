@@ -4,31 +4,40 @@ Dado un array de números y un número goal, encuentra los dos primeros números
 nums = [4, 5, 6, 2]
 goal = 8
 
-find_first_sum(nums, goal)  # [2, 3]
 """
 
-# def find_first_sum(nums, goal):
-#   # early return, una validación rápida
-#   if len(nums) == 0: return None
 
-#   for i in range(len(nums)):
-#     for j in range(i + 1, len(nums)):
-#       if nums[i] + nums[j] == goal:
-#         return [i, j]
+# def goal_finder(nums: list, goal: int):
+#     for candidate_idx, candidate in enumerate(nums):
+#         for addens_idx, addens in enumerate(nums):
+#             if addens_idx <= candidate_idx:
+#                 continue
+#             if candidate + addens == goal:
+#                 return [candidate_idx, addens_idx]
+#             return None
 
-#   return None # no se encontró ninguna combinación
 
-def find_first_sum(nums, goal):
-  seen = {} # diccionario para guardar el numero y su índice
+# print(goal_finder(nums, goal))
 
-  for index, value in enumerate(nums):
-    missing = goal - value
-    if missing in seen: return [seen[missing], index]
-    seen[value] = index # guardar el número actual a los vistos, porque no hemos encontrado la combinación
+# for i in [10, 2, 3, 4, 5, 6]:
+#     print(i)
 
-  return None
+# Otra forma
 
 nums = [4, 5, 6, 2]
-goal = 8
-result = find_first_sum(nums, goal) # [2, 3] 
-print(result)
+goal = 11
+
+
+def goal_finder(nums, goal):
+    """
+    Recibe una lista de numeros, y devuelve los indices que forman la combinacion que suman el valor 'goal'
+    """
+    seen = {}
+    for idx_candidate, candidate in enumerate(nums):
+        if goal - candidate in seen:
+            return [seen[goal - candidate], idx_candidate]
+
+        seen[candidate] = idx_candidate
+
+
+print(goal_finder(nums, goal))

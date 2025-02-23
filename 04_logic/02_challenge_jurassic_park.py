@@ -8,23 +8,18 @@ Escribe una función en Python que reciba una lista de números enteros y devuel
 """
 
 # Para ver si un número es par
-# siempre usamos el módulo %
-# nos da el resto de la división: eggs % 2 == 2
+#  siempre usamos el módulo %
+#  nos da el resto de la división: eggs % 2 == 2
 
-def count_carnivore_dinosaur_eggs(egg_list) -> int:
-  """
-  Esta función recibe una lista de numeros enteros que representan la cantidad de huevos que han puesto diferentes dinosaurios en el parque jurásico y los de número par son de carnívoros. Devuelve un número con la suma de todos los huevos de carnívoros.
-  """
-  total_carnivore_eggs = 0
 
-  for eggs in egg_list:
-    if eggs % 2 == 0:
-      total_carnivore_eggs += eggs
+# con el => decimos que va a devoler un entero
+def t_reggs_counter(list_of_eggs: list) -> int:
+    t_reggs_count = 0
+    for eggs in list_of_eggs:
+        if eggs % 2 == 0:
+            t_reggs_count += eggs
+    return t_reggs_count
 
-  # esta forma más corta:
-  # total_carnivore_eggs = sum(filter(lambda x: x % 2 == 0, egg_list))
 
-  return total_carnivore_eggs
-
-egg_list = [3, 4, 7, 5, 8]
-print(count_carnivore_dinosaur_eggs(egg_list)) # 12
+number_of_t_reggs = t_reggs_counter([1, 2, 3, 4, 5, 6, 7, 8])
+print(number_of_t_reggs)

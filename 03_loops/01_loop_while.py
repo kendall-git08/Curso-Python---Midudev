@@ -77,12 +77,13 @@
 # EJERCICIOS (while)
 ###
 import os
+
 # Ejercicio 1: Cuenta atrás
 # Imprime los números del 10 al 1 usando un bucle while.
 print("\nEjercicio 1:")
 
 number = 10
-while number > 0 :
+while number > 0:
     print(number)
     number -= 1
 
@@ -95,8 +96,8 @@ print("\nEjercicio 2:")
 number = 1
 suma = 0
 
-while 1<= number <=20:
-    if number%2 != 0:
+while 1 <= number <= 20:
+    if number % 2 != 0:
         number += 1
         continue
 
@@ -127,9 +128,8 @@ print(suma)
 # Usa un bucle while para seguir pidiendo la contraseña hasta que cumpla con los requisitos.
 # Si la contraseña es válida, imprime "Contraseña válida".
 
-os.system('cls')
+os.system("cls")
 print("\nEjercicio 4:")
-
 
 
 # while True:
@@ -141,11 +141,10 @@ print("\nEjercicio 4:")
 #     break
 
 
-
 # Ejercicio 5: Tabla de multiplicar
 # Pide al usuario que introduzca un número.
 # Imprime la tabla de multiplicar de ese número (del 1 al 10) usando un bucle while.
-os.system('cls')
+os.system("cls")
 print("\nEjercicio 5:")
 
 # multiplicator = 1
@@ -160,22 +159,21 @@ print("\nEjercicio 5:")
 # Imprime todos los números primos menores o iguales que N usando un bucle while.
 print("\nEjercicio 6:")
 
-prime_number = int(input('introduce un numero: '))
+prime_number = int(input("introduce un numero: "))
 
 
 while prime_number > 1:
     is_prime = True
-    divisor = prime_number-1
+    divisor = prime_number - 1
 
     while divisor > 1:
         if prime_number % divisor == 0:
             is_prime = False
             break
 
-        divisor-=1
-
+        divisor -= 1
 
     if is_prime:
         print(prime_number)
 
-    prime_number-=1
+    prime_number -= 1
