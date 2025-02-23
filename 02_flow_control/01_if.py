@@ -10,6 +10,8 @@ import os
 # system() nos permite ejecutar un comando en la terminal
 # en este caso lo hacemos para limpiar la pantalla
 os.system("clear")
+# En el caso que tu sistema no tenga la función "clear",
+# puedes usar el comando que sea correcto.
 
 print("\n Sentencia simple condicional")
 
@@ -139,7 +141,7 @@ mensaje = "Es mayor de edad" if edad >= 18 else "Es menor de edad"
 print(mensaje)
 
 ###
-# EJERCICOS
+# EJERCICIOS
 ###
 
 # Ejercicio 1: Determinar el mayor de dos números

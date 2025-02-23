@@ -3,6 +3,7 @@
 # Los métodos más importantes para trabajar con listas
 ###
 
+
 # import os
 # os.system("clear")
 
@@ -12,6 +13,14 @@
 
 # lista1.append('e') # Añade un elemento al final
 # print(lista1)
+
+# Creamos una lista con valores
+lista1 = ["a", "b", "c", "d"]
+
+# Añadir o insertar elementos a la lista
+lista1.append("e")  # Añade un elemento al final
+print(lista1)
+
 
 # lista1.insert(1, '@') # Inserta un elemento en la posición que le indiquemos como primer argumento
 # print(lista1)
@@ -30,17 +39,30 @@
 # lista1.pop(1) # Eliminar el segundo elemento de la lista (es el índice 1)
 # print(lista1)
 
+
 # # Eliminar por lo bestia
 # del lista1[-1]
 # print(lista1)
 
+# Eliminar por lo bestia un índice
+del lista1[-1]
+print(lista1)
+
+
 # lista1.clear() # Eliminar todos los elementos de la lista
 # print(lista1)
+
 
 # # Eliminar un rango de elementos
 # lista1 = ['🐼', '🐨', '🐶', '😿', '🐹']
 # del lista1[1:3]
 # print(lista1)
+
+# Eliminar un rango de elementos
+lista1 = ["🐼", "🐨", "🐶", "😿", "🐹"]
+del lista1[1:3]  # eliminamos los elementos del índice 1 al 3 (no incluye el índice 3)
+print(lista1)
+
 
 # # Más métodos útiles
 # print('Ordenar listas modificando la original')
@@ -71,7 +93,7 @@
 # print('🐹' in animals) # -> False
 
 ###
-# EJERCICOS
+# EJERCICIOS
 # Usa siempre que puedas los métodos que has aprendido
 ###
 
@@ -81,7 +103,7 @@
 # Inserta el número 10 en la posición 2 usando insert().
 # Modifica el primer elemento de la lista para que sea 0.
 
-numbers = [1,2,3,4,5]
+numbers = [1, 2, 3, 4, 5]
 numbers.append(6)
 print(numbers)
 
@@ -102,14 +124,14 @@ import os
 # Elimina el elemento en el índice 3 de lista_a usando pop(). Imprime el elemento eliminado.
 # Limpia completamente lista_b usando clear().
 
-lista_a = [1,2,3]
+lista_a = [1, 2, 3]
 lista_b = [4, 5, 6, 1, 2]
 
 lista_a.extend(lista_b)
-print(f'esta es la lista usando extend: {lista_a}')
+print(f"esta es la lista usando extend: {lista_a}")
 
 lista_a += lista_b
-print(f'esta es la lista usando concatenacion: {lista_a}')
+print(f"esta es la lista usando concatenacion: {lista_a}")
 
 lista_a.remove(1)
 print(lista_a)
@@ -120,13 +142,12 @@ lista_b.clear()
 print(lista_b)
 
 
-
 # Ejercicio 3: Slicing y eliminación con del
 # Crea una lista con los números del 1 al 10.
 # Utiliza slicing y del para eliminar los elementos desde el índice 2 hasta el 5 (sin incluir el 5).
 # Imprime la lista resultante.
 
-one_to_ten = [1,2,3,4,5,6,7,8,9,10]
+one_to_ten = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 del one_to_ten[2:4]
 print(one_to_ten)
 
@@ -136,13 +157,13 @@ print(one_to_ten)
 # Cuenta cuántas veces aparece el número 2 en la lista usando count().
 # Comprueba si el número 7 está en la lista usando in.
 
-another_numbers = [5,2,8,1,9,4,2]
+another_numbers = [5, 2, 8, 1, 9, 4, 2]
 another_numbers.sort()
-print(f'numeros ordenados: {another_numbers}')
+print(f"numeros ordenados: {another_numbers}")
 
-os.system('cls')
+os.system("cls")
 
-print(f'veces que se repite el numero 2: {another_numbers.count(2)}')
+print(f"veces que se repite el numero 2: {another_numbers.count(2)}")
 print(7 in numbers)
 
 # Ejercicio 5: Copia vs. Referencia
@@ -153,18 +174,19 @@ print(7 in numbers)
 # Modifica el primer elemento de la lista referencia a 10.
 # Imprime las cuatro listas (original, copia_1, copia_2, referencia) y observa los cambios.
 
-original = [1,2,3]
+original = [1, 2, 3]
 copia_1 = original[:]
 copia_2 = original.copy()
 referencia = original
-referencia[0] = 2 # termina afectando tanto a la lista original como a la llamada referencia
+referencia[
+    0
+] = 2  # termina afectando tanto a la lista original como a la llamada referencia
 print(original, copia_1, copia_2, referencia)
 
 # Ejercicio 6: Ordenar strings sin diferenciar mayúsculas y minúsculas.
 # Crea una lista con las siguientes cadenas: ["Manzana", "pera", "BANANA", "naranja"].
 # Ordena la lista sin diferenciar entre mayúsculas y minúsculas.
 
-fruits = ['Manzana', 'pera', 'BANANA', 'naranja']
-fruits.sort(key = str.lower)
+fruits = ["Manzana", "pera", "BANANA", "naranja"]
+fruits.sort(key=str.lower)
 print(fruits)
-
