@@ -42,14 +42,14 @@ def restar(a, b):
   """Resta dos números y devuelve el resultado"""
   return a - b
 
-parámetros por defecto
+# Parámetros por defecto
 def multiplicar(a, b = 2):
   return a * b
 
 print(multiplicar(2))
 print(multiplicar(2, 3))
 
-Argumentos por posición
+# Argumentos por posición
 def describir_persona(nombre: str, edad: int, sexo: str):
   print(f"Soy {nombre}, tengo {edad} años y me identifico como {sexo}")
 
