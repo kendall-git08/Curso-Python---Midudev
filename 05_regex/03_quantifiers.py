@@ -28,6 +28,9 @@ print(matches)
 
 # Ejercicio: Haz opcional que aparezca un +34 en el siguiente texto
 phone = "+34 688999999"
+pattern = r"\+34?\s\d{9}"
+matches = re.findall(pattern, phone)
+print(matches)  
 
 # {n}: Exactamente n veces
 text = "aaaaaa         aa   aaaa"
