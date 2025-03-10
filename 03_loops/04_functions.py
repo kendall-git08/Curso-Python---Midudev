@@ -12,7 +12,6 @@ def nombre_de_la_funcion(parametro1, parametro2, ...):
   # docstring
   # cuerpo de la función
   return valor_de_retorno # opcional
-
 """
 
 # Ejemplo de una función para imprimir algo en consola
