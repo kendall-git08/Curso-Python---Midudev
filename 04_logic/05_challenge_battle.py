@@ -1,5 +1,5 @@
 """
-Tienes dos listas de números, lista_a y lista_b, ambas de la misma longitud. 
+Tienes dos listas de números, lista_a y lista_b, ambas de la misma longitud.
 
 Cada número en lista_a se "enfrenta" al número en la misma posición en lista_b.
 
@@ -39,13 +39,12 @@ resultado = battle(lista_a, lista_b)  # -> "x"
 
 #  Algoritmos ocultos o cálculos o fórmulas
 
-# Algoritmos ocultos o cálculos o fórmulas
+#  Algoritmos ocultos o cálculos o fórmulas
 
 # Programación dinámica: buscar una solución mas eficiente
 
 
 def battle(lista_a, lista_b):
-
     battles_matchmaking = {}
     difference = 0
     round_winner = None
@@ -90,13 +89,16 @@ def battle_list(lista_a, lista_b):
 
 print(battle_list(lista_a, lista_b))
 
-    puntos_a = sum(lista_a)
-    puntos_b = sum(lista_b)
-    return f"{puntos_a - puntos_b}a" if puntos_a > puntos_b else f"{puntos_b - puntos_a}b" if puntos_b > puntos_a else "x"
+puntos_a = sum(lista_a)
+puntos_b = sum(lista_b)
+return (
+    f"{puntos_a - puntos_b}a"
+    if puntos_a > puntos_b
+    else f"{puntos_b - puntos_a}b" if puntos_b > puntos_a else "x"
+)
 
 
-lista_a = [4, 4, 4]
-lista_b = [2, 8, 2]
-winner = battle(lista_a, lista_b)
-print(winner)
-
+# lista_a = [4, 4, 4]
+# lista_b = [2, 8, 2]
+# winner = battle(lista_a, lista_b)
+# print(winner)

@@ -124,6 +124,8 @@ import os
 # Elimina el elemento en el índice 3 de lista_a usando pop(). Imprime el elemento eliminado.
 # Limpia completamente lista_b usando clear().
 
+os.system("cls")
+
 lista_a = [1, 2, 3]
 lista_b = [4, 5, 6, 1, 2]
 
@@ -133,13 +135,13 @@ print(f"esta es la lista usando extend: {lista_a}")
 lista_a += lista_b
 print(f"esta es la lista usando concatenacion: {lista_a}")
 
-lista_a.remove(1)
-print(lista_a)
+# lista_a.remove(1)
+# print(lista_a)
 
-lista_a.pop(0)
+# lista_a.pop(0)
 
-lista_b.clear()
-print(lista_b)
+# lista_b.clear()
+# print(lista_b)
 
 
 # Ejercicio 3: Slicing y eliminación con del
@@ -161,7 +163,7 @@ another_numbers = [5, 2, 8, 1, 9, 4, 2]
 another_numbers.sort()
 print(f"numeros ordenados: {another_numbers}")
 
-os.system("cls")
+# os.system("cls")
 
 print(f"veces que se repite el numero 2: {another_numbers.count(2)}")
 print(7 in numbers)
@@ -178,9 +180,9 @@ original = [1, 2, 3]
 copia_1 = original[:]
 copia_2 = original.copy()
 referencia = original
-referencia[
-    0
-] = 2  # termina afectando tanto a la lista original como a la llamada referencia
+referencia[0] = (
+    2  # termina afectando tanto a la lista original como a la llamada referencia
+)
 print(original, copia_1, copia_2, referencia)
 
 # Ejercicio 6: Ordenar strings sin diferenciar mayúsculas y minúsculas.

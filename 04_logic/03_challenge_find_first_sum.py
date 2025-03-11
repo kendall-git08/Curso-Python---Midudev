@@ -6,7 +6,6 @@ goal = 8
 
 """
 
-
 # def goal_finder(nums: list, goal: int):
 #     for candidate_idx, candidate in enumerate(nums):
 #         for addens_idx, addens in enumerate(nums):

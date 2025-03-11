@@ -11,25 +11,25 @@ print(False)
 
 # Operadores de comparación: devuelven un valor booleano.
 print("\nOperadores de comparación:")
-print("5 > 3:", 5 > 3)        # True
-print("5 < 3:", 5 < 3)        # False
-print("5 == 5:", 5 == 5)      # True (igualdad)
-print("5 != 3:", 5 != 3)      # True (desigualdad)
-print("5 >= 5:", 5 >= 5)      # True (mayor o igual que)
-print("5 <= 3:", 5 <= 3)      # False (menor o igual que)
+print("5 > 3:", 5 > 3)  # True
+print("5 < 3:", 5 < 3)  # False
+print("5 == 5:", 5 == 5)  # True (igualdad)
+print("5 != 3:", 5 != 3)  # True (desigualdad)
+print("5 >= 5:", 5 >= 5)  # True (mayor o igual que)
+print("5 <= 3:", 5 <= 3)  # False (menor o igual que)
 
 print("\nComparación de cadenas:")
-print("'manzana' < 'pera':", "manzana" < "pera") # True
-print("'Hola' == 'hola'", "Hola" == "hola") # False
+print("'manzana' < 'pera':", "manzana" < "pera")  # True
+print("'Hola' == 'hola'", "Hola" == "hola")  # False
 
 # Operadores lógicos: and, or, not
 print("\nOperadores lógicos:")
-print("True and True:", True and True)   # True
+print("True and True:", True and True)  # True
 print("True and False:", True and False)  # False
-print("True or False:", True or False)    # True
+print("True or False:", True or False)  # True
 print("False or False:", False or False)  # False
-print("not True:", not True)             # False
-print("not False:", not False)            # True
+print("not True:", not True)  # False
+print("not False:", not False)  # True
 
 # Tablas de verdad (para referencia):
 print("\nTablas de verdad:")
@@ -47,7 +47,7 @@ print("True  False", True or False)
 print("False True ", False or True)
 print("False False", False or False)
 
-print("\n not:") 
+print("\n not:")
 print("A     not A")
 print("True ", not True)
 print("False", not False)

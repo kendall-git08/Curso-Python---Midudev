@@ -28,10 +28,10 @@ lista_b = [4, 5, 6, 1, 2]
 lista_a.extend(lista_b)
 lista_a.remove(1)
 elemento_eliminado = lista_a.pop(3)
-print(f"Elemento eliminado: {elemento_eliminado}") #Output: Elemento eliminado: 5
+print(f"Elemento eliminado: {elemento_eliminado}")  # Output: Elemento eliminado: 5
 lista_b.clear()
-print("Lista a:", lista_a) #Output: Lista a: [2, 3, 4, 6, 1, 2]
-print("Lista b:", lista_b) #Output: Lista b: []
+print("Lista a:", lista_a)  # Output: Lista a: [2, 3, 4, 6, 1, 2]
+print("Lista b:", lista_b)  # Output: Lista b: []
 
 # Ejercicio 3: Slicing y eliminación con del
 # Crea una lista con los números del 1 al 10.
@@ -52,9 +52,9 @@ lista = [5, 2, 8, 1, 9, 4, 2]
 lista.sort()
 cantidad_dos = lista.count(2)
 esta_el_siete = 7 in lista
-print(f"Lista ordenada: {lista}") #Output: Lista ordenada: [1, 2, 2, 4, 5, 8, 9]
-print(f"Cantidad de 2: {cantidad_dos}") #Output: Cantidad de 2: 2
-print(f"¿Está el 7?: {esta_el_siete}") #Output: ¿Está el 7?: False
+print(f"Lista ordenada: {lista}")  # Output: Lista ordenada: [1, 2, 2, 4, 5, 8, 9]
+print(f"Cantidad de 2: {cantidad_dos}")  # Output: Cantidad de 2: 2
+print(f"¿Está el 7?: {esta_el_siete}")  # Output: ¿Está el 7?: False
 
 # Ejercicio 5: Copia vs. Referencia
 # Crea una lista llamada original con los números [1, 2, 3].
@@ -69,10 +69,10 @@ copia_1 = original[:]
 copia_2 = original.copy()
 referencia = original
 referencia[0] = 10
-print(f"Original: {original}")       # Output: Original: [10, 2, 3]
-print(f"Copia 1 (slicing): {copia_1}") # Output: Copia 1 (slicing): [1, 2, 3]
-print(f"Copia 2 (copy()): {copia_2}") # Output: Copia 2 (copy()): [1, 2, 3]
-print(f"Referencia: {referencia}")     # Output: Referencia: [10, 2, 3]
+print(f"Original: {original}")  # Output: Original: [10, 2, 3]
+print(f"Copia 1 (slicing): {copia_1}")  # Output: Copia 1 (slicing): [1, 2, 3]
+print(f"Copia 2 (copy()): {copia_2}")  # Output: Copia 2 (copy()): [1, 2, 3]
+print(f"Referencia: {referencia}")  # Output: Referencia: [10, 2, 3]
 
 # Ejercicio 6: Ordenar strings sin diferenciar mayúsculas y minúsculas.
 # Crea una lista con las siguientes cadenas: ["Manzana", "pera", "BANANA", "naranja"].
@@ -80,4 +80,4 @@ print(f"Referencia: {referencia}")     # Output: Referencia: [10, 2, 3]
 print("\nEjercicio 6:")
 strings = ["Manzana", "pera", "BANANA", "naranja"]
 strings.sort(key=str.lower)
-print(strings) # Output: ['BANANA', 'Manzana', 'naranja', 'pera']
+print(strings)  # Output: ['BANANA', 'Manzana', 'naranja', 'pera']

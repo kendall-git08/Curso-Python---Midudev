@@ -25,7 +25,7 @@ e = None
 print("--------------")
 
 print("\nEjercicio 3: Casting de tipos")
-print("Convierte la cadena \"12345\" a un entero y luego a un float.")
+print('Convierte la cadena "12345" a un entero y luego a un float.')
 print("Convierte el float 3.99 a un entero. ¿Qué ocurre?")
 
 ### Completa aquí
@@ -49,45 +49,48 @@ print("3. Haz la división entera entre el número que te salió y el número 2"
 print("4. El resultado debería ser 1")
 
 
-#---------------------------- RESPUESTAS -------------------------
+# ---------------------------- RESPUESTAS -------------------------
+
 
 def clear_console():
-	print('\n'*100)
+    print("\n" * 100)
 
-#ejercicio 1
+
+# ejercicio 1
 clear_console()
-print('Fabian Ortiz\nCumana')
+print("Fabian Ortiz\nCumana")
 
-#ejercicio 2
+# ejercicio 2
 print(type(a))
 print(type(b))
 print(type(c))
 print(type(e))
 
-#ejercicio 3
-number = '1234'
+# ejercicio 3
+number = "1234"
 
 to_int_number = int(number)
-print(f'{number} este numero es de tipo {type(number)}')
+print(f"{number} este numero es de tipo {type(number)}")
 
 to_float_number = float(number)
-print(f'{number} este numero es de tipo {type(number)}')
+print(f"{number} este numero es de tipo {type(number)}")
 
-#ejercicio 4
-name = 'fabian'
+# ejercicio 4
+name = "fabian"
 age = 22
 height = 1.68
 
+
 def greetings():
-	return f'hola! me llamo {name} y tengo {age} anios, mido {height} metros'
+    return f"hola! me llamo {name} y tengo {age} anios, mido {height} metros"
+
 
 saludo = greetings()
 print(saludo)
 
 
-
-#ejercicio 5
+# ejercicio 5
 pi = 3.141516
 rounded_pi = round(pi)
-final = rounded_pi/2
+final = rounded_pi / 2
 print(int(final))
