@@ -100,4 +100,4 @@ def distribute_weight(weight: int) -> str:
     return result_box
 
 
-print(distribute_weight(1))
+print(distribute_weight(121))
