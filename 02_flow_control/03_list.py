@@ -4,7 +4,14 @@
 # Pueden contener elementos de diferentes tipos.
 ###
 
+
 # Creación de listas
+
+from os import system
+if system("clear") != 0: system("cls")
+
+# Creación de listas
+
 print("\nCrear listas")
 lista1 = [1, 2, 3, 4, 5]  # lista de enteros
 lista2 = ["manzanas", "peras", "plátanos"]  # lista de cadenas

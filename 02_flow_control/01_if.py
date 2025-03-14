@@ -3,6 +3,7 @@
 # Permiten ejecutar bloques de código solo si se cumplen ciertas condiciones.
 ###
 
+
 # Podemos importar módulos de Python para usarlos en nuestros programas.
 # En este caso, importamos el módulo "os" que nos da acceso a funciones
 # relacionadas con el sistema operativo
@@ -14,8 +15,11 @@ os.system("clear")
 # En el caso que tu sistema no tenga la función "clear",
 # puedes usar el comando que sea correcto.
 
-print("\n Sentencia simple condicional")
+from os import system
+if system("clear") != 0: system("cls")
 
+
+print("\n Sentencia simple condicional")
 # Podemos usar la palabra clave "if" para ejecutar un bloque de código
 # solo si se cumple una condición.
 edad = 18

@@ -6,6 +6,7 @@ goal = 8
 
 """
 
+
 # def goal_finder(nums: list, goal: int):
 #     for candidate_idx, candidate in enumerate(nums):
 #         for addens_idx, addens in enumerate(nums):
@@ -14,6 +15,14 @@ goal = 8
 #             if candidate + addens == goal:
 #                 return [candidate_idx, addens_idx]
 #             return None
+
+from os import system
+if system("clear") != 0: system("cls")
+
+# def find_first_sum(nums, goal):
+#   # early return, una validación rápida
+#   if len(nums) == 0: return None
+
 
 
 # print(goal_finder(nums, goal))

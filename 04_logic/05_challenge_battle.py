@@ -35,6 +35,9 @@ resultado = battle(lista_a, lista_b)  # -> "x"
 # Resultado: "x"
 """
 
+from os import system
+if system("clear") != 0: system("cls")
+
 # Fuerza bruta: buscar la solución A SACO.
 
 #  Algoritmos ocultos o cálculos o fórmulas

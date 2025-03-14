@@ -16,6 +16,13 @@ Crea una función en Python que reciba una cadena de texto. Esta función debe c
 """
 
 
+=======
+from os import system
+if system("clear") != 0: system("cls")
+
+text = "RRRRJJJjjjrrr"
+
+
 def balance_detector(text: str):
     text = text.lower()
     r_count = text.count("r")

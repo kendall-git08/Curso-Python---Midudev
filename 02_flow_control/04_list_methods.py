@@ -14,6 +14,10 @@
 # lista1.append('e') # Añade un elemento al final
 # print(lista1)
 
+from os import system
+if system("clear") != 0: system("cls")
+
+
 # Creamos una lista con valores
 lista1 = ["a", "b", "c", "d"]
 

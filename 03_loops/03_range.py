@@ -3,7 +3,14 @@
 # # Permite crear una secuencia de números. Puede ser útil para for, pero no solo para eso
 # ###
 
+
 # print("\nrange():")
+
+from os import system
+if system("clear") != 0: system("cls")
+
+print("\nrange():")
+
 
 # # Generado una secuencia de números del 0 al 9
 # for num in range(10):
