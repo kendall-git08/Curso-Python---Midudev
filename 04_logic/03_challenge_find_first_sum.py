@@ -22,16 +22,16 @@ if system("clear") != 0: system("cls")
 #   return None # no se encontró ninguna combinación
 
 def find_first_sum(nums, goal):
-  seen = {} # diccionario para guardar el numero y su índice
+  for idx,val in enumerate(nums):
+    missing = goal-nums[idx]
+    lista = nums.copy()
+    lista.pop(idx)
+    if missing in lista:
+      idx2 = lista.index(missing)+1+idx
+      resultado = [idx,idx2]
+      return resultado
 
-  for index, value in enumerate(nums):
-    missing = goal - value
-    if missing in seen: return [seen[missing], index]
-    seen[value] = index # guardar el número actual a los vistos, porque no hemos encontrado la combinación
-
-  return None
-
-nums = [4, 5, 6, 2]
-goal = 8
-result = find_first_sum(nums, goal) # [2, 3] 
+nums = [4, 4, 5, 6, 2] 
+goal = 6
+result = find_first_sum(nums, goal) #  Respuestas esperada [0,4] 
 print(result)
