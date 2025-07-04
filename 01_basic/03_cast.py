@@ -30,6 +30,10 @@ print(bool(""))  # Una cadena vacía es False. Resultado: False
 print(bool(" "))  # Una cadena con espacios es True. Resultado: True
 print(bool("False"))  # Una cadena con texto, aunque sea "False", es True. Resultado: True
 
+#Tambien se evaluan como False los tipos de datos avanzados que se encuentren vacios
+print(bool({}), "Asi se representa con bool un diccionario vacio")
+print(bool([]), "Asi se representa con bool una lista vacia")
+
 # Redondear un número decimal
 print(round(2.51))  # Redondea 2.51 al entero más cercano. Resultado: 3
 
